@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Onest">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+</head>
+
+<body>
+  <main>
+    <section class="filters">
+      <div class="input-container">
+        <h1>Pokedex</h1>
+      </div>
+      <form id="form-filters">
+        <div class="main-container">
+          <label class="container-cb"><input id="grass" type="checkbox" checked />
+            <div class="checkmark"></div><span>grass</span>
+          </label>
+          <label class="container-cb"><input id="poison" type="checkbox" checked />
+            <div class="checkmark"></div><span>poison</span>
+          </label>
+          <label class="container-cb"><input id="fire" type="checkbox" checked />
+            <div class="checkmark"></div><span>fire</span>
+          </label>
+          <label class="container-cb"><input id="flying" type="checkbox" checked />
+            <div class="checkmark"></div><span>flying</span>
+          </label>
+          <label class="container-cb"><input id="bug" type="checkbox" checked />
+            <div class="checkmark"></div><span>bug</span>
+          </label>
+          <label class="container-cb"><input id="water" type="checkbox" checked />
+            <div class="checkmark"></div><span>water</span>
+          </label>
+          <label class="container-cb"><input id="normal" type="checkbox" checked />
+            <div class="checkmark"></div><span>normal</span>
+          </label>
+          <label class="container-cb"><input id="ground" type="checkbox" checked />
+            <div class="checkmark"></div><span>ground</span>
+          </label>
+          <label class="container-cb"><input id="electric" type="checkbox" checked />
+            <div class="checkmark"></div><span>electric</span>
+          </label>
+          <label class="container-cb"><input id="fairy" type="checkbox" checked />
+            <div class="checkmark"></div><span>fairy</span>
+          </label>
+          <label class="container-cb"><input id="fighting" type="checkbox" checked />
+            <div class="checkmark"></div><span>fighting</span>
+          </label>
+          <label class="container-cb"><input id="psychic" type="checkbox" checked />
+            <div class="checkmark"></div><span>psychic</span>
+          </label>
+          <label class="container-cb"><input id="rock" type="checkbox" checked />
+            <div class="checkmark"></div><span>rock</span>
+          </label>
+          <label class="container-cb"><input id="steal" type="checkbox" checked />
+            <div class="checkmark"></div><span>steal</span>
+          </label>
+          <label class="container-cb"><input id="ice" type="checkbox" checked />
+            <div class="checkmark"></div><span>ice</span>
+          </label>
+          <label class="container-cb"><input id="ghost" type="checkbox" checked />
+            <div class="checkmark"></div><span>ghost</span>
+          </label>
+          <label class="container-cb"><input id="dragon" type="checkbox" checked />
+            <div class="checkmark"></div><span>dragon</span>
+          </label>
+        </div>
+        <div class="input-container">
+          <input id="pokemon-name" type="text" placeholder="Pokemon name" />
+        </div>
+        <div class="input-container">
+          <button type="submit">Filter</button>
+        </div>
+      </form>
+    </section>
+    <section class="pokemons">
+    </section>
+  </main>
+  <script src="./data.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

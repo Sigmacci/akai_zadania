@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: 'Play';
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Onest';
+}
+
+label {
+  padding: 8px;
+}
+
+label span {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+input {
+  padding: 4px;
+}
+
+button {
+  padding: 4px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin-top: 5%;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  margin: auto; 
+  margin-bottom: 4%;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+
+.main-container {
+  margin-left: 3%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+ .container-cb {
+  --input-focus: #2d8cf0;
+  --input-out-of-focus: #ccc;
+  --bg-color: #fff;
+  --bg-color-alt: #666;
+  --main-color: #323232;
+  cursor: pointer;
+  display: flex;
+}
+
+.container-cb input {
+  position: relative;
+  opacity: 0;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--input-out-of-focus);
+  transition: all 0.3s;
+}
+
+.container-cb input:checked ~ .checkmark {
+  background-color: var(--input-focus);
+}
+
+.checkmark:after {
+  content: "";
+  width: 4px;
+  height: 7px;
+  position: relative;
+  top: 2px;
+  left: 6px;
+  display: none;
+  border: solid var(--bg-color);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.container-cb input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+#pokemon-name {
+  border: 2px solid transparent;
+  width: 90%;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  border: solid #323232 1px;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+#pokemon-name:hover {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.0em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.3em;
+}
+
+.input-container {
+  width: 101%;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 2%;
+}
